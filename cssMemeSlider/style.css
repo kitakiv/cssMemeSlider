@@ -181,7 +181,7 @@ input[name="r"] {
     display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
     .media {
         display: flex;
         width: 320vw;
@@ -200,5 +200,29 @@ input[name="r"] {
 
     .text {
         display: none;
+    }
+
+    .navigation {
+        margin-top: 1vw;
+        display: flex;
+        width: 80vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    #r1:checked ~ #text-media {
+        transform: translateX(0);
+    }
+
+    #r2:checked ~ #text-media {
+        transform: translateX(-80vw);
+    }
+
+    #r3:checked ~ #text-media {
+        transform: translateX(-160vw);
+    }
+
+    #r4:checked ~ #text-media {
+        transform: translateX(-240vw);
     }
 }
