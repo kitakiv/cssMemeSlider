@@ -132,3 +132,47 @@ input[name="r"] {
     gap: 2vw;
     align-items: flex-start;
 }
+
+#r1:checked ~ .go {
+    transform: translateX(0);
+}
+
+#r2:checked ~ .go {
+    transform: translateX(-80vw);
+}
+
+#r3:checked ~ .go {
+    transform: translateX(-160vw);
+}
+
+#r4:checked ~ .go {
+    transform: translateX(-240vw);
+}
+
+#r1:checked ~ #controls label:nth-child(1),
+#r2:checked ~ #controls label:nth-child(2){
+    background-color: black;
+    opacity: 0.8;
+    transform: scale(1.5);
+}
+
+#r3:checked ~ #controls label:nth-child(3),
+#r4:checked ~ #controls label:nth-child(4) {
+    background-color: #fc419a;
+    opacity: 0.8;
+    transform: scale(1.5);
+}
+
+#r1:checked ~ #controls label:nth-child(1):hover,
+#r2:checked ~ #controls label:nth-child(2):hover {
+    background-color: black;
+    opacity: 0.5;
+    transform: scale(1.1);
+}
+
+#r3:checked ~ #controls label:nth-child(3):hover,
+#r4:checked ~ #controls label:nth-child(4):hover {
+    background-color: #fc419a;
+    opacity: 0.5;
+    transform: scale(1.1);
+}
