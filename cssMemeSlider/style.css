@@ -30,7 +30,7 @@ body {
     transform: rotate(21deg);
 }
 
-.svg {
+.svg2 {
     width: 45vw;
     height: auto;
     margin-bottom: 5vw;
@@ -60,4 +60,75 @@ body {
     margin-top: 1vw;
     font-size: 3.5vw;
     font-family: 'Splash', cursive;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.navigation {
+    margin-top: -4vw;
+    display: flex;
+    width: 80vw;
+    justify-content: end;
+}
+
+.bar1 {
+    display: flex;
+    width: 1.5vw;
+    height: 1.5vw;
+    margin: 1vw;
+    cursor: pointer;
+    background-color: #fff;
+    opacity: 0.5;
+    border-radius: 50%;
+    transition: all 0.4s ease;
+}
+
+.bar1:hover {
+    transform: scale(1.8);
+    opacity: 1;
+}
+
+input[name="r"] {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+
+.slides {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 80vw;
+    overflow: hidden;
+}
+
+.width-slide {
+    max-width: 320vw;
+    display: flex;
+    flex-direction: row;
+    transition: all 0.3s ease-in-out;
+}
+
+.img {
+    width: 80vw;
+    height: auto;
+    box-shadow: 1vw 1vw 2vw 2vw rgba(255, 225, 225, 0.3);
+}
+
+.text {
+    color: #fff ;
+    font-size: 2.8vw;
+    font-family: 'Barrio', cursive;
+    opacity: 0.8;
+}
+
+.center-img {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    align-items: flex-start;
 }
