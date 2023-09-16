@@ -74,6 +74,16 @@ main {
     justify-content: end;
 }
 
+.bar2 {
+    display: flex;
+    width: 3vw;
+    height: 3vw;
+    cursor: pointer;
+    background-color: #e00808;
+    opacity: 0;
+    margin: -1vw;
+}
+
 .bar1 {
     display: flex;
     width: 1.5vw;
@@ -84,6 +94,8 @@ main {
     opacity: 0.5;
     border-radius: 50%;
     transition: all 0.4s ease;
+    justify-content: center;
+    align-items: center;
 }
 
 .bar1:hover {
