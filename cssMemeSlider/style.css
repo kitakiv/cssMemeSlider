@@ -4,10 +4,6 @@ html {
     overflow-x: hidden;
 }
 
-*, *::before, *::after {
-    box-sizing: inherit;
-}
-
 header {
     display: flex;
     flex-direction: row;
@@ -15,7 +11,8 @@ header {
 }
 
 body {
-    font-size: 16px;
+    box-sizing: inherit;
+    font-size: 1rem;
     margin: 0 auto;
     background: linear-gradient(90deg, #fc419a 0 50%, #373737  50% 100%);
     font-family: 'Barbie', sans-serif;
@@ -98,7 +95,7 @@ main {
     align-items: center;
 }
 
-.bar1:hover {
+label:hover {
     transform: scale(1.8);
     opacity: 1;
 }
@@ -207,7 +204,7 @@ input[name="r"] {
         font-family: 'Barrio', cursive;
         opacity: 0.8;
         margin-top: 1vw;
-        text-align: center;
+        text-align: flex-start;
     }
 
     .text {
